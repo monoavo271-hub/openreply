@@ -37,7 +37,7 @@ async function poll() {
     if (attached.bound > 0 || attached.failedAccounts > 0) {
       console.log("[DM Worker] Next-reel attachment:", attached);
     }
-    await reconcileComments();
+    // await reconcileComments();
   } catch (error) {
     const message = error instanceof Error ? error.message : "Unknown error";
     console.error("[DM Worker] Comment reconciliation failed:", message);
